@@ -6,13 +6,13 @@
   <h1>How did we do?</h1>
   <p>Please let us know how we did with your support request. All the feedback is apprecaited to help us improve our offering!</p>
 </div>
-  <div class="message" v-show="monkey === !false">
+  <div class="message" v-show="monkey === true">
     <img src="../assets/illustration-thank-you.svg" alt="">
     <p>You selected {{value}} out of 5</p>
     <h1>Thank you!</h1>
     <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
   </div>
-  <button @click="monkey = false">SUBMIT</button>
+  <button class="submit" @click="monkey = true" :class="{hide : monkey}">SUBMIT</button>
 </div>
 </section>
 </template>
@@ -41,5 +41,8 @@ section{
   height: 25rem;
   border-radius: 16px;
   background:var(--dblue);
+}
+.hide{
+  display: none;
 }
 </style>
