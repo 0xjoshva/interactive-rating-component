@@ -92,7 +92,7 @@ section {
 
 .star {
   background: rgba(128, 128, 128, 0.11);
-  padding: 0.7rem;
+  padding: 1rem;
   border-radius: 50%;
   margin-bottom: 1.5rem;
 }
@@ -116,6 +116,7 @@ p {
   border: none;
   outline: none;
   line-height: 40px;
+  transition: .2s ease-in-out all;
 }
 .submit:hover {
   background: var(--white);
@@ -168,7 +169,7 @@ p {
   line-height: normal;
   border: none;
   outline: none;
-  transition: .2s ease-in-out all;
+ transition: .2s cubic-bezier(0.45, 0.05, 0.55, 0.95) all;
 }
 .focus {
   background: var(--orange) !important;
