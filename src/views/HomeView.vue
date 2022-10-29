@@ -126,6 +126,15 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  animation: fade linear 1s;
+}
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 #score {
   color: var(--orange);
@@ -159,10 +168,12 @@ p {
   line-height: normal;
   border: none;
   outline: none;
+  transition: .2s ease-in-out all;
 }
 .focus {
   background: var(--orange) !important;
   color: var(--white) !important;
+  scale: 1.1;
 }
 .radio-btn:hover {
   background: var(--mgrey);
