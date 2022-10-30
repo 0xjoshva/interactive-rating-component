@@ -70,6 +70,7 @@ export default {
       value: 0,
     };
   },
+
 };
 </script>
 <style scoped>
@@ -156,7 +157,7 @@ p {
   width: 100%;
   justify-content: space-between;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 .radio-btn {
   padding: 1rem 1.4rem;
